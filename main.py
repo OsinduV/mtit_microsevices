@@ -1,3 +1,7 @@
 from mylib.logic import gemini
 
-print(gemini())
+result = gemini("what is the capital of France?")
+
+result = result 
+
+print(result)
