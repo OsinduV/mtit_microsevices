@@ -1,5 +1,7 @@
 install:
 	# Install the package using pip
+	pip install --upgrade pip &&\
+		pip install -r requirements.txt
 format:
 	# Format the code using black or autopep8
 lint:
