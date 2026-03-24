@@ -10,7 +10,10 @@ lint:
 	pylint --disable=R,C *.py mylib/*.py
 test:
 	# Run tests using pytest or unittest
+	python -m pytest -vv --cov=mylib test_logic.py
+build:
+	# Build container
 deploy:
-	# Deploy the package to PyPI or another repository
+	# Deploy 
 all: install lint test deploy
 	# Run all the above steps in sequence
